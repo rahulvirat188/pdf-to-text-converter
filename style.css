@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,400;1,600&display=swap');
+/* Italic weights */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    /* Apply italic style globally */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #ffb6c1, #ffb6c1);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #f78da7;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+    color: #000;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+input[type="file"] {
+    margin: 20px 0;
+    padding: 12px;
+    border: 2px dashed #ccc;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ffeef2;
+    color: #000;
+    transition: 0.3s;
+}
+
+input[type="file"]:hover {
+    border-color: #e91e63;
+    background: #fff0f5;
+}
+
+button {
+    background: #e91e63;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+textarea {
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    background: #fff0f5;
+    color: #000;
+    transition: border 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #e91e63;
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

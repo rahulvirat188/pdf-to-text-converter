@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF to Text Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>PDF to Text Converter</h1>
+        <input type="file" id="pdf-upload" accept="application/pdf" />
+        <button onclick="convertPDF()">Convert to Text</button>
+        <textarea id="output-text" placeholder="Text will appear here..." readonly></textarea>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
